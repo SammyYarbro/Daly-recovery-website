@@ -1,0 +1,10 @@
+# Security & caching
+/*
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), camera=(), microphone=()
+
+# HTML — always revalidate
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
