@@ -17,6 +17,22 @@
       This page requires JavaScript to display.
     </div>
   </noscript>
+  curl \
+  --url 'https://api.cloudflare.com/client/v4/accounts/77505c205449abef85dfc359fea76f67/request-tracer/tracer' \
+  --header 'Content-Type: application/json' \
+  --header "Authorization: Bearer $CF_AUTH_TOKEN" \
+  --data '{
+  "url": "HTTP://DALYRECOVERY.ORG",
+  "method": "GET",
+  "context": {
+    "geoloc": {
+      "iso_code": "US",
+      "city": "LAUREL"
+    },
+    "bot_score": "99",
+    "skip_challenge": true
+  }
+}'
 </head>
 <body>
   <div id="__bundler_thumbnail">
