@@ -1,2 +1,2 @@
 # www → root redirect (Cloudflare Pages handles apex + www; this is a fallback)
-https://www.dalyrecovery.org/*  https://dalyrecovery.org/:splat  301
+https://www.dalyrecovery.org/*  https://dalyrecovery.org /:splat  301
